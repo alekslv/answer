@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Возраст",
+    "type": "radio",
+    "result": 0,
+    "showText": false,
+    "next": false,
+    "Answers": [
+      " 25-30 ",
+      " 31-39 ",
+      " 40-45 ",
+      " 46-55 ",
+      " Старше 55 "
+    ]
+  },
+  {
+    "title": "  Место работы: ",
+    "result": 0,
+    "type": "radio",
+    "showText": false,
+    "next": false,
+    "Answers": [
+      " гинекологический стационара ",
+      " акушерский стационар ",
+      " амбулаторный приём ",
+      " центр ЭКО ",
+      " онкология "
+    ]
+  },
+  {
+    "title": "  Замужем: ",
+    "result": 0,
+    "showText": false,
+    "type": "radio",
+    "next": false,
+    "Answers": [
+      " да ",
+      " нет "
+    ]
+  },
+  {
+    "title": "  Есть дети: ",
+    "result": 0,
+    "type": "radio",
+    "showText": true,
+    "text": "",
+    "placeholder": "сколько",
+    "next": true,
+    "Answers": [
+      "Да",
+      "Нет"
+    ]
+  }
+]
