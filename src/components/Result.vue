@@ -171,7 +171,7 @@ export default {
       index: 0,
     }
   },
-  props: ['Questions', 'sex','DopQuestions'],
+  props: ['Questions', 'sex','DopQuestions','address'],
   mounted() {
     this.res1();
     this.res2();
@@ -243,6 +243,7 @@ export default {
         url: '/send.php',
         data: {
           sex: this.sex,
+          address:this.address,
           Questions: this.Questions,
           DopQuestions: this.DopQuestions,
           result1: this.result1,

@@ -15,19 +15,23 @@ $mail->Subject = 'Опросник';
 
 $data = json_decode(file_get_contents("php://input"), true);
 $sex = $data['sex'];
+$address=str_replace(',','',$data['address']) ;
 $Questions = $data['Questions'];
 $DopQuestions = $data['DopQuestions'];
 
 
 
 $dataTitle=[ ];
+$dataTitle[]='address';
 $dataTitle[]='sex';
 $datas=[ ];
+$datas[]=$address;
 $datas[]=$sex;
 
 $html='
  <h1>Результат теста</h1>
- <p>Пол: '.$sex.'</p> ';
+ <p>Пол: '.$sex.'</p> 
+ <p>Адрес: '.$address.'</p> ';
 
 //личные вопросы start *******************************************
 $html.='
